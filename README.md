@@ -36,5 +36,8 @@ $ echo "SELECT 1;" | bqcat
 1
 ```
 
+## Author
+Nao YONASHIRO (@orisano)
+
 ## LICENSE
 MIT
