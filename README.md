@@ -3,12 +3,12 @@ bqcat is Google BigQuery client for a command line.
 
 query result writes to stdout in CSV. pipe friendly.
 
-## installation
+## Installation
 ```bash
 go get -u github.com/orisano/bqcat
 ```
 
-## usage
+## Usage
 ```bash
 $ bqcat --help
 Usage of bqcat:
@@ -18,7 +18,7 @@ Usage of bqcat:
         project id
 ```
 
-## how to use
+## How to use
 ### give query from arguments
 ```bash
 $ bqcat "SELECT 1;"
@@ -39,5 +39,5 @@ $ echo "SELECT 1;" | bqcat
 ## Author
 Nao YONASHIRO (@orisano)
 
-## LICENSE
+## License
 MIT
