@@ -10,7 +10,6 @@ import (
 
 	"cloud.google.com/go/bigquery"
 	"github.com/orisano/gproject"
-	"github.com/pkg/errors"
 	"google.golang.org/api/iterator"
 )
 
@@ -34,7 +33,7 @@ func run() error {
 	case queryPath != "":
 		b, err := ioutil.ReadFile(queryPath)
 		if err != nil {
-			return err
+			return fmt.Errorf("read file: %w", err)
 		}
 		query = string(b)
 	case flag.NArg() >= 1:
@@ -42,7 +41,7 @@ func run() error {
 	default:
 		b, err := ioutil.ReadAll(os.Stdin)
 		if err != nil {
-			return err
+			return fmt.Errorf("read stdin: %w", err)
 		}
 		query = string(b)
 	}
@@ -54,17 +53,17 @@ func run() error {
 	ctx := context.Background()
 	bq, err := bigquery.NewClient(ctx, projectID)
 	if err != nil {
-		return errors.Wrap(err, "failed to create BigQuery client")
+		return fmt.Errorf("create BigQuery client: %w", err)
 	}
 
 	q := bq.Query(query)
 	job, err := q.Run(ctx)
 	if err != nil {
-		return errors.Wrap(err, "failed to run query")
+		return fmt.Errorf("run query: %w", err)
 	}
 	rows, err := job.Read(ctx)
 	if err != nil {
-		return err
+		return fmt.Errorf("read result: %w", err)
 	}
 
 	for {
@@ -74,7 +73,7 @@ func run() error {
 			break
 		}
 		if err != nil {
-			log.Fatal(err)
+			return fmt.Errorf("read next: %w", err)
 		}
 		for i, col := range row {
 			fmt.Print(col)
