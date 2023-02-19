@@ -3,15 +3,19 @@ module github.com/orisano/bqcat
 go 1.13
 
 require (
-	cloud.google.com/go v0.109.0 // indirect
-	cloud.google.com/go/bigquery v1.45.0
-	cloud.google.com/go/compute v1.18.0 // indirect
-	cloud.google.com/go/iam v0.10.0 // indirect
+	cloud.google.com/go v0.110.0 // indirect
+	cloud.google.com/go/bigquery v1.46.0
+	cloud.google.com/go/iam v0.12.0 // indirect
+	github.com/andybalholm/brotli v1.0.5 // indirect
+	github.com/apache/thrift v0.18.0 // indirect
+	github.com/goccy/go-json v0.10.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
-	github.com/google/martian/v3 v3.3.2 // indirect
+	github.com/google/flatbuffers v23.1.21+incompatible // indirect
+	github.com/klauspost/compress v1.15.15 // indirect
+	github.com/klauspost/cpuid/v2 v2.2.3 // indirect
 	github.com/orisano/gproject v0.1.0
-	golang.org/x/oauth2 v0.4.0 // indirect
-	google.golang.org/api v0.108.0
-	google.golang.org/genproto v0.0.0-20230127162408-596548ed4efa // indirect
-	google.golang.org/grpc v1.52.3 // indirect
+	github.com/pierrec/lz4/v4 v4.1.17 // indirect
+	golang.org/x/net v0.7.0 // indirect
+	golang.org/x/tools v0.6.0 // indirect
+	google.golang.org/api v0.110.0
 )
