@@ -7,13 +7,13 @@ toolchain go1.24.0
 require (
 	cloud.google.com/go/bigquery v1.67.0
 	github.com/orisano/gproject v0.1.0
-	google.golang.org/api v0.226.0
+	google.golang.org/api v0.227.0
 )
 
 require (
-	cloud.google.com/go v0.119.0 // indirect
+	cloud.google.com/go v0.120.0 // indirect
 	cloud.google.com/go/auth v0.15.0 // indirect
-	cloud.google.com/go/auth/oauth2adapt v0.2.7 // indirect
+	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/compute/metadata v0.6.0 // indirect
 	cloud.google.com/go/iam v1.4.2 // indirect
 	github.com/apache/arrow/go/v15 v15.0.2 // indirect
