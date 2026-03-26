@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	cloud.google.com/go/bigquery v1.74.0
 	github.com/orisano/gproject v0.1.0
-	google.golang.org/api v0.272.0
+	google.golang.org/api v0.273.0
 )
 
 require (
@@ -24,7 +24,7 @@ require (
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.14 // indirect
-	github.com/googleapis/gax-go/v2 v2.19.0 // indirect
+	github.com/googleapis/gax-go/v2 v2.20.0 // indirect
 	github.com/klauspost/compress v1.18.5 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.26 // indirect
