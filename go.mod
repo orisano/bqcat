@@ -5,7 +5,7 @@ go 1.26.2
 require (
 	cloud.google.com/go/bigquery v1.77.0
 	github.com/orisano/gproject v0.1.0
-	google.golang.org/api v0.282.0
+	google.golang.org/api v0.283.0
 )
 
 require (
